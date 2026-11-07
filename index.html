@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Analisis Konten Digital</title>
+    <style>
+        :root {
+            --primary-color: #2e7d32;
+            --primary-hover: #1b5e20;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #212529;
+            --text-muted: #6c757d;
+            --border-color: #dee2e6;
+            --zebra-color: #f8f9fa;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            padding: 20px;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 24px;
+            font-weight: 700;
+            font-size: 1.75rem;
+            letter-spacing: -0.5px;
+        }
+
+        /* Responsive Table Wrapper */
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            min-width: 650px; /* Mencegah tabel terlalu sempit di HP */
+        }
+
+        th, td {
+            padding: 14px 16px;
+            vertical-align: top;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--zebra-color);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background-color: #f1f8e9;
+            transition: background-color 0.2s ease;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            background-color: #e8f5e9;
+            color: var(--primary-color);
+        }
+
+        strong {
+            color: #111;
+        }
+
+        /* Optimasi Tampilan Mobile */
+        @media (max-width: 576px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 16px;
+                border-radius: 8px;
+            }
+            h2 {
+                font-size: 1.4rem;
+                margin-bottom: 16px;
+            }
+            th, td {
+                padding: 10px 12px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>ASPEK ANALISIS KONTEN DIGITAL</h2>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 5%;" class="text-center">No</th>
+                        <th style="width: 25%;">Nama Konten</th>
+                        <th style="width: 20%;">Jenis</th>
+                        <th style="width: 25%;">Fungsi</th>
+                        <th style="width: 25%;">Manfaat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center">1</td>
+                        <td><strong>Video Pembelajaran</strong><br><span style="color: var(--text-muted); font-size: 0.85rem;">Contoh: YouTube / Video Edukasi</span></td>
+                        <td><span class="badge">Video / Audiovisual</span></td>
+                        <td>Menyampaikan materi pelajaran atau tutorial secara visual dan audio agar mudah dipahami.</td>
+                        <td>Membantu memahami konsep yang sulit, dapat diakses kapan saja, dan mendukung pembelajaran mandiri.</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">2</td>
+                        <td><strong>E-Book / Buku Digital</strong><br><span style="color: var(--text-muted); font-size: 0.85rem;">Contoh: PDF Buku Pelajaran</span></td>
+                        <td><span class="badge">Teks / Dokumen Elektronik</span></td>
+                        <td>Menyediakan informasi, teori, dan materi bacaan dalam format digital.</td>
+                        <td>Menghemat kertas, mudah dibawa dalam satu perangkat, praktis dicari menggunakan fitur <em>search</em>.</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">3</td>
+                        <td><strong>Infografis Media Sosial</strong><br><span style="color: var(--text-muted); font-size: 0.85rem;">Contoh: Instagram Info Grafis</span></td>
+                        <td><span class="badge">Gambar / Grafis</span></td>
+                        <td>Menyajikan data, fakta, atau ringkasan informasi secara visual yang menarik dan padat.</td>
+                        <td>Menyampaikan informasi penting dengan cepat dalam waktu singkat serta menarik minat pembaca.</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">4</td>
+                        <td><strong>Podcast / Audio Edukasi</strong><br><span style="color: var(--text-muted); font-size: 0.85rem;">Contoh: Spotify / Rekaman Audio</span></td>
+                        <td><span class="badge">Audio</span></td>
+                        <td>Membahas topik tertentu melalui percakapan atau wawancara suara.</td>
+                        <td>Melatih kemampuan menyimak (<em>listening</em>), dapat didengarkan sambil melakukan aktivitas lain (<em>multitasking</em>).</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">5</td>
+                        <td><strong>Situs Web Berita</strong><br><span style="color: var(--text-muted); font-size: 0.85rem;">Contoh: Portal Informasi / Artikel Daring</span></td>
+                        <td><span class="badge">Teks & Gambar (Web)</span></td>
+                        <td>Menyampaikan informasi atau berita aktual mengenai peristiwa yang sedang terjadi.</td>
+                        <td>Menyediakan akses informasi berita secara cepat, aktual, dan dapat diakses dari berbagai wilayah.</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">6</td>
+                        <td><strong>Game Edukasi / Kuis Interaktif</strong><br><span style="color: var(--text-muted); font-size: 0.85rem;">Contoh: Wordwall / Kahoot</span></td>
+                        <td><span class="badge">Interaktif / Aplikasi Game</span></td>
+                        <td>Menguji pemahaman pengguna melalui kuis atau permainan berbasis digital.</td>
+                        <td>Membuat proses evaluasi atau belajar menjadi lebih menyenangkan, interaktif, dan meningkatkan motivasi.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
